@@ -46,6 +46,9 @@ def extract_zip_file(zip_path):
     os.remove(zip_path)
 
 
+#TODO: Create a function to download the files
+# from Kaggle directly by passing the dataset name
+
 def download_zip_file(url):
     """Download a ZIP file from a URL and save it to a local file.
 
@@ -88,6 +91,8 @@ def main():
     print(f"Data file: {data_file}")
     data01 = f'{SERVER_URL}/{data_file}'
     download_zip_file(data01)
+    # TODO: Set input user options to extract files
+    # from different sources: -url, -kaggle
 
 
 
