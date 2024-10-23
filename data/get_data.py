@@ -80,12 +80,18 @@ def main():
     """
     TBD: Method DocString
     """
+
+    
+    # TODO: Enable options for downloading sources
+    # -i for icarus server <FILE>
+    # -k for kaggle <DATASET>
+    # -s for other server: <SERVER> <FILE>
     # If no arguments are provided, print a usage message
     if len(sys.argv) < 2:
         print("Usage: python download_data.py <data_file>")
         sys.exit(1)
 
-    # data01 = f'{SERVER_URL}/pandas01Data.zip'
+    #data01 = f'{SERVER_URL}/pandas01Data.zip'
     # Take data file as input parameter
     data_file = sys.argv[1]
     print(f"Data file: {data_file}")
